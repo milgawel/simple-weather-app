@@ -10,13 +10,16 @@ const Content = styled.div`
   border: 1px solid #e95312;
   border-radius: 1em;
   background-color: #fff;
+  display: ${props => (props.active ? 'block' : 'none')};
 `;
+
+const time = new Date();
 
 const Card = ({ data }) => {
   return (
-    <Content>
+    <Content active={data.requestedCity}>
       <h1>{data.requestedCity}</h1>
-      <p>godzina</p>
+      <p>{time.toLocaleTimeString()}</p>
       <img
         src={`https://developer.accuweather.com/sites/default/files/${data.picture}-s.png`}
         alt="obrazek"

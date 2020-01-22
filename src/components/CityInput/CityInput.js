@@ -47,7 +47,12 @@ class CityInput extends Component {
 
   render() {
     return (
-      <Form onSubmit={e => this.props.change(e, this.state.value)}>
+      <Form
+        onSubmit={e => {
+          this.props.change(e, this.state.value);
+          this.setState({ value: '' });
+        }}
+      >
         <label htmlFor="city">
           <Input
             type="text"

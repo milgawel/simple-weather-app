@@ -18,15 +18,34 @@ const Header = styled.h2`
 
 class WeatherApp extends Component {
   state = {
-    requestedCity: 'jakie miasto?',
+    requestedCity: '',
     city: 'jeden',
     date: '11.11.2020',
     picture: '01',
   };
 
+  fetchCity = city => {
+    fetch(
+      `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=s9wGCHoGfpd6EPFPsGyniPfgHgRJh4l4&q=${city}`,
+    )
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        this.setState({ requestedCity: data[0].LocalizedName });
+      })
+      .catch(err => console.log(err));
+  };
+
   handleRequestCity = (e, data) => {
     e.preventDefault();
-    this.setState({ requestedCity: data });
+    this.fetchCity(data);
+  };
+
+  handleRequestData = () => {
+    fetch()
+      .than()
+      .than()
+      .catch(err => console.log(err));
   };
 
   render() {
