@@ -5,10 +5,8 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   margin: auto;
   height: 100vh;
-  width: 100vw;
   width: 100%;
   max-width: 415px;
-  border: 2px solid #e95312;
   background-color: rgba(242, 242, 242, 0.8);
 `;
 

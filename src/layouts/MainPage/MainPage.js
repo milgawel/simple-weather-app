@@ -18,22 +18,23 @@ const Header = styled.h2`
 
 class WeatherApp extends Component {
   state = {
-    city: '',
+    requestedCity: 'jakie miasto?',
+    city: 'jeden',
+    date: '11.11.2020',
+    picture: '01',
   };
 
-  handleChange = e => {
-    this.setState({
-      city: e.target.value,
-    });
+  handleRequestCity = (e, data) => {
+    e.preventDefault();
+    this.setState({ requestedCity: data });
   };
 
   render() {
     return (
       <MainWindow>
         <Header>AccuPogoda</Header>
-        <CityInput change={this.handleChange} />
-        {this.state.city}
-        <Card />
+        <CityInput change={this.handleRequestCity} />
+        <Card data={this.state} />
       </MainWindow>
     );
   }

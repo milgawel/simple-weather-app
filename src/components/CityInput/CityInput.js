@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const Form = styled.div`
+const Form = styled.form`
   padding: 1em;
-  /* background-color: rgba(222, 222, 222, 0.5); */
   display: flex;
   justify-content: center;
 `;
@@ -35,23 +34,36 @@ const Button = styled.button`
   }
 `;
 
-const CityInput = props => {
-  return (
-    <Form>
-      <label htmlFor="city">
-        <Input
-          type="text"
-          placeholder="wprowadź miasto"
-          id="city"
-          name="city"
-          onChange={props.change}
-        />
-      </label>
-      <Button>
-        <i className="fas fa-search"></i>
-      </Button>
-    </Form>
-  );
-};
+class CityInput extends Component {
+  state = {
+    value: '',
+  };
+
+  handleChange = e => {
+    this.setState({
+      value: e.target.value,
+    });
+  };
+
+  render() {
+    return (
+      <Form onSubmit={e => this.props.change(e, this.state.value)}>
+        <label htmlFor="city">
+          <Input
+            type="text"
+            placeholder="wprowadź miasto"
+            id="city"
+            name="city"
+            value={this.state.value}
+            onChange={this.handleChange}
+          />
+        </label>
+        <Button>
+          <i className="fas fa-search"></i>
+        </Button>
+      </Form>
+    );
+  }
+}
 
 export default CityInput;
