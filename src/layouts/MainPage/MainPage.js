@@ -68,6 +68,16 @@ class WeatherApp extends Component {
     this.fetchCity(data);
   };
 
+  scrollToBottom = () => {
+    this.messagesEnd.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  componentDidUpdate() {
+    if (this.state.text) {
+      this.scrollToBottom();
+    }
+  }
+
   componentDidMount() {
     const data = JSON.parse(window.localStorage.getItem('weatherData'));
     this.fetchCity(data.city);
@@ -79,6 +89,12 @@ class WeatherApp extends Component {
         <Header>AccuPogoda</Header>
         <CityInput change={this.handleRequestCity} />
         <Card data={this.state} />
+        <div
+          style={{ float: 'left', clear: 'both' }}
+          ref={el => {
+            this.messagesEnd = el;
+          }}
+        ></div>
       </MainWindow>
     );
   }
