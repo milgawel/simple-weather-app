@@ -80,7 +80,7 @@ class WeatherApp extends Component {
 
   componentDidMount() {
     const data = JSON.parse(window.localStorage.getItem('weatherData'));
-    this.fetchCity(data.city);
+    if (data) this.fetchCity(data.city);
   }
 
   render() {
