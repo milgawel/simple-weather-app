@@ -48,7 +48,7 @@ class WeatherApp extends Component {
   handleRequestData = key => {
     fetch(
       // `http://dataservice.accuweather.com/currentconditions/v1/${key}?apikey=s9wGCHoGfpd6EPFPsGyniPfgHgRJh4l4`,
-      `https://dataservice.accuweather.com/currentconditions/v1/${key}?apikey=	8NohnMk0lcfUPmDAdCiaKBIwZYSQ5t46`,
+      `https://dataservice.accuweather.com/currentconditions/v1/${key}?apikey=8NohnMk0lcfUPmDAdCiaKBIwZYSQ5t46`,
     )
       .then(response => response.json())
       .then(data => {
