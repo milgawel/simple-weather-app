@@ -1,22 +1,24 @@
 {
   "files": {
     "main.css": "/simple-weather-app/static/css/main.fcd2bc2c.chunk.css",
-    "main.js": "/simple-weather-app/static/js/main.09993883.chunk.js",
-    "main.js.map": "/simple-weather-app/static/js/main.09993883.chunk.js.map",
+    "main.js": "/simple-weather-app/static/js/main.db50a57c.chunk.js",
+    "main.js.map": "/simple-weather-app/static/js/main.db50a57c.chunk.js.map",
     "runtime-main.js": "/simple-weather-app/static/js/runtime-main.9bd9093e.js",
     "runtime-main.js.map": "/simple-weather-app/static/js/runtime-main.9bd9093e.js.map",
-    "static/js/2.38a41e06.chunk.js": "/simple-weather-app/static/js/2.38a41e06.chunk.js",
-    "static/js/2.38a41e06.chunk.js.map": "/simple-weather-app/static/js/2.38a41e06.chunk.js.map",
+    "static/js/2.9511e447.chunk.js": "/simple-weather-app/static/js/2.9511e447.chunk.js",
+    "static/js/2.9511e447.chunk.js.map": "/simple-weather-app/static/js/2.9511e447.chunk.js.map",
     "index.html": "/simple-weather-app/index.html",
-    "precache-manifest.dea2f69d633ff0b84f80de35c11f7751.js": "/simple-weather-app/precache-manifest.dea2f69d633ff0b84f80de35c11f7751.js",
+    "precache-manifest.b0f11f16a78ce9c4d8392846b8976061.js": "/simple-weather-app/precache-manifest.b0f11f16a78ce9c4d8392846b8976061.js",
     "service-worker.js": "/simple-weather-app/service-worker.js",
     "static/css/main.fcd2bc2c.chunk.css.map": "/simple-weather-app/static/css/main.fcd2bc2c.chunk.css.map",
-    "static/js/2.38a41e06.chunk.js.LICENSE": "/simple-weather-app/static/js/2.38a41e06.chunk.js.LICENSE"
+    "static/js/2.9511e447.chunk.js.LICENSE": "/simple-weather-app/static/js/2.9511e447.chunk.js.LICENSE",
+    "static/media/day.jpg": "/simple-weather-app/static/media/day.bdce5924.jpg",
+    "static/media/night.jpg": "/simple-weather-app/static/media/night.aeda4e63.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9bd9093e.js",
-    "static/js/2.38a41e06.chunk.js",
+    "static/js/2.9511e447.chunk.js",
     "static/css/main.fcd2bc2c.chunk.css",
-    "static/js/main.09993883.chunk.js"
+    "static/js/main.db50a57c.chunk.js"
   ]
 }
