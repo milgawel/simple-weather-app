@@ -8,7 +8,7 @@ const MainWindow = styled.div`
   flex-direction: column;
   padding-top: 20px;
   font-family: sans-serif;
-  max-height: 100%;
+  height: 100vh;
 `;
 
 const Header = styled.h2`

@@ -6,8 +6,8 @@ import night from 'assets/background/night.jpg';
 const Content = styled.div`
   margin: 20px auto 20px auto;
   width: 90%;
-  height: 90vh;
-  border: 1px solid #e95312;
+  height: 100%;
+  border: 2px solid #e95312;
   border-radius: 1em;
   background-image: url(${props => (props.isDayTime ? day : night)});
   display: ${props => (props.active ? 'flex' : 'none')};
