@@ -29,7 +29,7 @@ class WeatherApp extends Component {
   fetchCity = city => {
     fetch(
       // `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=s9wGCHoGfpd6EPFPsGyniPfgHgRJh4l4&q=${city}`,
-      `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=	8NohnMk0lcfUPmDAdCiaKBIwZYSQ5t46&q=${city}`,
+      `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=8NohnMk0lcfUPmDAdCiaKBIwZYSQ5t46&q=${city}`,
     )
       .then(response => response.json())
 
